@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -26,13 +28,60 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" class="lead">DATE HERE</p>
+      <!-- This P tag above is being used to set the date and time for the user -->
     </header>
-    <div class="container" id="timeHeader">TIME
-      <!-- Timeblocks go here -->
-      
-    </div>
     
+      <!-- Timeblocks go here-- I have added bootstrap input type elements to allow for text entry
+      They are all numbered by the 1 hour block times and Buttons at the end for saving -->
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">9 AM: </span>
+        <input id="b1" type="text" class="form-control" class="events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <button class="saveBtn" onclick="changeColor">Save</button>
+      </div>
+      <!-- added an onclick in the first button to connect to a function -->
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">10AM: </span>
+        <input type="text" class="form-control" class="events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <button class="saveBtn">Save</button>
+      </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">11AM:</span>
+        <input type="text" class="form-control" class="events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <button class="saveBtn">Save</button>
+      </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">12PM:</span>
+        <input type="text" class="form-control" class="events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <button class="saveBtn">Save</button>
+      </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">1 PM:</span>
+        <input type="text" class="form-control" class="events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <button class="saveBtn">Save</button>
+      </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">2 PM:</span>
+        <input type="text" class="form-control" class="events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <button class="saveBtn">Save</button>
+      </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">3 PM:</span>
+        <input type="text" class="form-control" class="events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <button class="saveBtn">Save</button>
+      </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">4 PM:</span>
+        <input type="text" class="form-control" class="events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <button class="saveBtn">Save</button>
+      </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">5 PM:</span>
+        <input type="text" class="form-control" class="events" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+        <button class="saveBtn">Save</button>
+      </div><br>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
