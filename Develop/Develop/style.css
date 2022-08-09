@@ -1,5 +1,4 @@
 * {
-  /* border: solid 2px black; */
   margin: 0;
   padding: 0;
 }
@@ -64,6 +63,7 @@ textArea {
 }
 
 .saveBtn {
+  padding-right: 6px;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -76,14 +76,16 @@ textArea {
   transition: all 0.3s ease-in-out;
 }
 
+/* //Added this id tag */
 #currentDay {
   font-size: 30px;
   color: blue;
 }
-
+/* This is the save icon added from google fonts */
 .material-symbols-outlined {
   margin: 2px;
   padding: 1px;
+  font-size: large;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
